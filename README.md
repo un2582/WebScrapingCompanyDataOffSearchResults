@@ -1,3 +1,38 @@
-# WebScrapingCompanyDataOffSearchResults
-This is based on a job offer I saw on upwork and decided it would be a fun personal project. Click on output.csv to see the results of the data stored in the csv files (phone, fax, email, address, company logging distribution, etc). Otherwise click on the .py file to see the code 
-The url for the website that upwork wanted data from is: http://bls.mind-over-data.com/index.cfm/external/SearchResults/Handbook/1/%20/speciesRegionCompanyType/-1/7
+## Installing
+
+Using pip:
+
+```bash
+$ pip install requests
+$ pip install bs4
+$ pip install pandas
+```
+## axios API
+
+Requests can be made by passing the relevant config to `axios`.
+
+##### axios(config)
+
+```js
+// Send a POST request
+axios({
+  method: 'post',
+  url: '/user/12345',
+  data: {
+    firstName: 'Fred',
+    lastName: 'Flintstone'
+  }
+});
+```
+
+```js
+// GET request for remote image in node.js
+axios({
+  method: 'get',
+  url: 'http://bit.ly/2mTM3nY',
+  responseType: 'stream'
+})
+  .then(function (response) {
+    response.data.pipe(fs.createWriteStream('ada_lovelace.jpg'))
+  });
+```
