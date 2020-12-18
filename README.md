@@ -7,9 +7,9 @@ $ pip install requests
 $ pip install bs4
 $ pip install pandas
 ```
-## axios API
+## What it does:
 
-Requests can be made by passing the relevant config to `axios`.
+
 
 ##### axios(config)
 
